@@ -4,7 +4,6 @@ import type { ReactNode } from "react";
 
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { MouseTrail } from "@/components/ui/mouse-trail";
 import "@/styles/globals.css";
 
 const inter = Inter({
@@ -76,7 +75,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         <Footer />
-        <MouseTrail />
       </body>
     </html>
   );

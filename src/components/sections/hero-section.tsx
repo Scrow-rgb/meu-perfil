@@ -68,8 +68,8 @@ export function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
-          <div className="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-primary/20 blur-[80px]" />
-          <div className="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-secondary/20 blur-[80px]" />
+          <div className="absolute -bottom-6 -right-6 h-28 w-28 rounded-full bg-primary/20 blur-3xl" />
+          <div className="absolute -left-6 -top-6 h-28 w-28 rounded-full bg-secondary/20 blur-3xl" />
         </Reveal>
       </div>
     </section>

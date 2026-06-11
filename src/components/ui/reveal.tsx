@@ -1,7 +1,9 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import type { AriaAttributes, ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
 
 interface RevealProps
   extends Pick<AriaAttributes, "aria-label" | "aria-labelledby"> {
@@ -20,19 +22,47 @@ export function Reveal({
   as = "div",
   ...props
 }: RevealProps) {
-  const shouldReduceMotion = useReducedMotion();
-  const MotionTag = as === "section" ? motion.section : motion.div;
+  const ref = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const Component = as;
+
+  useEffect(() => {
+    const element = ref.current;
+
+    if (!element) return;
+
+    const shouldReduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (shouldReduceMotion) {
+      setIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setIsVisible(true);
+        observer.disconnect();
+      },
+      { threshold: 0.18, rootMargin: "0px 0px -50px 0px" },
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <MotionTag
-      className={className}
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 40 }}
-      whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
-      viewport={{ once: true, amount: 0.18, margin: "0px 0px -50px 0px" }}
+    <Component
+      ref={ref}
+      className={cn("reveal", isVisible && "reveal-visible", className)}
+      style={{ transitionDelay: `${delay}s` }}
       {...props}
     >
       {children}
-    </MotionTag>
+    </Component>
   );
 }

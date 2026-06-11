@@ -5,7 +5,7 @@ import { techStackItems } from "@/data/portfolio";
 export function TechStackSection() {
   return (
     <section className="relative overflow-hidden bg-surface-container-lowest/50 py-section-gap-mobile md:py-section-gap-desktop">
-      <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-primary/5 blur-[120px]" />
+      <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-primary/5 blur-3xl" />
       <div className="tech-stack-orbit pointer-events-none absolute left-6 top-20 h-48 w-48 rounded-full border border-primary/10" />
 
       <div className="relative z-10 mx-auto max-w-container-max-width px-gutter">
@@ -29,7 +29,6 @@ export function TechStackSection() {
               <Reveal key={item.label} delay={index * 0.06}>
                 <GlassCard
                   className="tech-stack-card group relative flex flex-col items-center gap-4 overflow-hidden rounded-xl p-6 text-center transition-all"
-                  style={{ animationDelay: `${index * 90}ms` }}
                 >
                   <span className="tech-stack-icon relative grid h-14 w-14 place-items-center rounded-2xl border border-primary/20 bg-primary/10 transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-6">
                     <Icon aria-hidden className="h-8 w-8 text-primary" />
