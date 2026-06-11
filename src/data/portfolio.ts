@@ -7,8 +7,6 @@ import {
   Coffee,
   Database,
   GitBranch,
-  Mail,
-  MessageCircle,
   Server,
   Terminal,
 } from "lucide-react";
@@ -110,20 +108,20 @@ export const timelineItems: TimelineItem[] = [
 ];
 
 export const contactLinks: ContactLink[] = [
-  { label: "Email", href: "mailto:contato@caio.dev", icon: Mail },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: ArrowUpRight },
-  { label: "GitHub", href: "https://github.com", icon: GitBranch },
+
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/caio-silva-931a0723a/", icon: ArrowUpRight },
+  { label: "GitHub", href: "https://github.com/scrow-rgb", icon: GitBranch },
 ];
 
 export const footerLinks: ContactLink[] = [
   { label: "GitHub", href: "https://github.com", icon: GitBranch },
   { label: "LinkedIn", href: "https://linkedin.com", icon: ArrowUpRight },
   { label: "Twitter", href: "#", icon: ArrowUpRight },
-  { label: "Email", href: "mailto:contato@caio.dev", icon: MessageCircle },
+
 ];
 
 export const heroImage = {
-  src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA-_GTDlmgBD3RhhyMJY-Gi6EyFIm2tmCJX9yosXsiEpGcNI8XNEweKd9kVOeaJWpKPmOXKPjXlwofeUI84EI1yQtYHAGn-T4cX_loP1Xuum1eefjxNl0Lum0u4LzVbi_stDqWu8k7b8srpVNz6BqbKtRAGFoB0k6Uk7jS-bm4Fsf9lO9XBws6ckgIlqbQjVvF6-_Obg_0cs4UQja5PshP3BJx3-0LsVQ_DmyP-ZCxJxQt-P51mf4wV_ACf6Qh2mf3kFzmaGTSVPUfQ",
+  src: "/images/caio.jpg",
   alt: "Caio, estudante de Engenharia de Computação e freelancer em programação.",
 };
 

@@ -142,6 +142,232 @@ button {
   transform: translateY(1px);
 }
 
+.hero-profile-card {
+  transition:
+    border-color 500ms ease,
+    box-shadow 500ms ease,
+    transform 500ms ease;
+}
+
+.hero-profile-card:hover {
+  border-color: rgb(221 183 255 / 35%);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 45%), 0 0 36px rgb(221 183 255 / 16%);
+  transform: translateY(-4px);
+}
+
+.hero-profile-color {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-profile-card:hover .hero-profile-color {
+  clip-path: inset(0 0 0 0);
+}
+
+.hero-profile-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgb(255 255 255 / 18%) 48%,
+    transparent 58%
+  );
+  transform: translateX(-120%);
+  transition: transform 900ms ease;
+}
+
+.hero-profile-card:hover::after {
+  transform: translateX(120%);
+}
+
+.tech-stack-orbit {
+  animation: orbit-pulse 8s ease-in-out infinite;
+}
+
+.tech-stack-card {
+  animation: stack-float 5s ease-in-out infinite;
+}
+
+.tech-stack-card::before,
+.project-card::before,
+.featured-project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.tech-stack-card::before {
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgb(221 183 255 / 18%) 45%,
+    rgb(123 208 255 / 18%) 55%,
+    transparent 80%
+  );
+  transform: translateX(-120%);
+}
+
+.tech-stack-card:hover::before {
+  animation: sheen-sweep 900ms ease forwards;
+  opacity: 1;
+}
+
+.tech-stack-icon {
+  box-shadow: inset 0 0 20px rgb(221 183 255 / 8%);
+}
+
+.tech-stack-icon::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 1.25rem;
+  border: 1px solid rgb(123 208 255 / 0%);
+  transition:
+    border-color 400ms ease,
+    transform 400ms ease;
+}
+
+.tech-stack-card:hover .tech-stack-icon::after {
+  border-color: rgb(123 208 255 / 28%);
+  transform: rotate(10deg) scale(1.08);
+}
+
+.project-card,
+.featured-project-card {
+  transition:
+    transform 500ms ease,
+    border-color 500ms ease,
+    box-shadow 500ms ease;
+}
+
+.project-card:hover,
+.featured-project-card:hover {
+  border-color: rgb(221 183 255 / 28%);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 35%), 0 0 40px rgb(221 183 255 / 12%);
+  transform: translateY(-6px);
+}
+
+.project-card::before,
+.featured-project-card::before {
+  background:
+    radial-gradient(circle at 15% 20%, rgb(221 183 255 / 18%), transparent 28%),
+    radial-gradient(circle at 85% 80%, rgb(123 208 255 / 14%), transparent 30%);
+}
+
+.project-card:hover::before,
+.featured-project-card:hover::before {
+  opacity: 1;
+}
+
+.featured-project-card::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  pointer-events: none;
+  background: conic-gradient(
+    from 180deg,
+    transparent,
+    rgb(221 183 255 / 12%),
+    transparent,
+    rgb(123 208 255 / 10%),
+    transparent
+  );
+  opacity: 0.45;
+  animation: featured-aurora 12s linear infinite;
+}
+
+.featured-project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.featured-project-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgb(255 255 255 / 18%) 45%,
+    transparent 60%
+  );
+  transform: translateX(-120%);
+  transition: transform 900ms ease;
+}
+
+.featured-project-card:hover .featured-project-image::after {
+  transform: translateX(120%);
+}
+
+.featured-project-kicker {
+  animation: featured-breathe 2.8s ease-in-out infinite;
+}
+
+.featured-project-link:hover svg {
+  transform: translateX(4px);
+}
+
+.featured-project-link svg {
+  transition: transform 300ms ease;
+}
+
+@keyframes stack-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes sheen-sweep {
+  from {
+    transform: translateX(-120%);
+  }
+
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes orbit-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: rotate(12deg) scale(1.1);
+  }
+}
+
+@keyframes featured-aurora {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes featured-breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgb(221 183 255 / 0%);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgb(221 183 255 / 18%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -49,14 +49,22 @@ export function HeroSection() {
         </Reveal>
 
         <Reveal className="relative lg:col-span-5" delay={0.2}>
-          <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
+          <div className="hero-profile-card group relative aspect-square overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
             <Image
               src={heroImage.src}
               alt={heroImage.alt}
               fill
               priority
               sizes="(min-width: 1024px) 430px, 100vw"
-              className="object-cover grayscale transition-all duration-700 hover:grayscale-0"
+              className="object-cover grayscale"
+            />
+            <Image
+              src={heroImage.src}
+              alt=""
+              fill
+              aria-hidden
+              sizes="(min-width: 1024px) 430px, 100vw"
+              className="hero-profile-color object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>

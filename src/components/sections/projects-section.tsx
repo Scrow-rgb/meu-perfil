@@ -16,18 +16,22 @@ function ProjectCard({ project, index }: ProjectCardProps) {
   if (project.isFeatured) {
     return (
       <Reveal className="lg:col-span-2" delay={index * 0.12}>
-        <article className="group relative flex flex-col overflow-hidden rounded-3xl glass-card md:flex-row">
-          <div className="relative aspect-video overflow-hidden md:w-1/2 md:aspect-auto">
+        <article className="featured-project-card group relative flex flex-col overflow-hidden rounded-3xl glass-card md:flex-row">
+          <div className="featured-project-image relative aspect-video overflow-hidden md:w-1/2 md:aspect-auto">
             <Image
               src={project.image}
               alt={project.imageAlt}
               fill
               sizes="(min-width: 1024px) 600px, 100vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
+            <div className="absolute inset-0 bg-gradient-to-tr from-background/80 via-transparent to-primary/20" />
           </div>
 
-          <div className="flex flex-col justify-center p-8 md:w-1/2 md:p-12">
+          <div className="relative flex flex-col justify-center p-8 md:w-1/2 md:p-12">
+            <span className="featured-project-kicker mb-5 w-fit rounded-full border border-primary/30 bg-primary/10 px-4 py-2 font-label-sm text-[10px] uppercase tracking-[0.24em] text-primary">
+              Projeto em destaque
+            </span>
             <ProjectTags tags={project.tags} />
             <h3 className="mb-4 font-headline-xl text-headline-xl">
               {project.title}
@@ -37,7 +41,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             </p>
             <Link
               href={project.href}
-              className="flex w-fit items-center gap-3 rounded-xl border border-primary/30 px-8 py-4 font-bold text-primary transition-all hover:bg-primary/10"
+              className="featured-project-link flex w-fit items-center gap-3 rounded-xl border border-primary/30 px-8 py-4 font-bold text-primary transition-all hover:bg-primary/10"
             >
               Ver Repositório <Terminal aria-hidden size={20} />
             </Link>
@@ -49,15 +53,16 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <Reveal delay={index * 0.12}>
-      <article className="group relative overflow-hidden rounded-3xl glass-card">
+      <article className="project-card group relative overflow-hidden rounded-3xl glass-card">
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
             src={project.image}
             alt={project.imageAlt}
             fill
             sizes="(min-width: 1024px) 584px, 100vw"
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
         </div>
 
         <div className="p-8">
