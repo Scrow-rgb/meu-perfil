@@ -23,16 +23,16 @@ import type {
 } from "@/types/portfolio";
 
 export const navItems: NavItem[] = [
-  { label: "Projects", href: "#projects" },
-  { label: "About", href: "#about" },
-  { label: "Timeline", href: "#timeline" },
-  { label: "Metrics", href: "#metrics" },
+  { label: "Projetos", href: "#projects" },
+  { label: "Sobre", href: "#about" },
+  { label: "Trajetória", href: "#timeline" },
+  { label: "Perfil", href: "#metrics" },
 ];
 
 export const metrics: Metric[] = [
-  { value: "15+", label: "Projetos Desenvolvidos" },
-  { value: "12+", label: "Tecnologias Dominadas" },
-  { value: "04", label: "Anos de Experiência" },
+  { value: "Freela", label: "Projetos sob demanda" },
+  { value: "Redes", label: "Atuação técnica atual" },
+  { value: "Eng. Comp.", label: "Formação em andamento" },
 ];
 
 export const techStackItems: TechStackItem[] = [
@@ -50,31 +50,31 @@ export const techStackItems: TechStackItem[] = [
 
 export const projects: Project[] = [
   {
-    title: "Sistema de Chat em Tempo Real",
+    title: "Victoria's Restaurante",
     description:
-      "Plataforma de comunicação segura com baixa latência e criptografia ponta-a-ponta.",
-    tags: ["WebSocket", "Node.js", "React"],
+      "Landing page premium para restaurante em Contagem, com cardápio, galeria, avaliações e chamada direta para WhatsApp.",
+    tags: ["Next.js", "React 19", "Framer Motion"],
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCES0W3NBfhxpT7JiqM1En0ikfyoxeBRQGY5OtQaETMBzqQ0mMZVrZr7LkQaor5_Lqu3isyJGl6H7mvCyT8fzRMZy1-G_ZBAGhloPKcrgtzSnFdIbZ8DwuKb1N6MFA9HMMYTwIMeakjQzh-Va2NVbmTPwu6xvRlh3ECFygUaRh5fkOmfNbhACmYcW5YeUqz8cAPJwBwyCWfPyO77lnorphJ5Z9VOFjcbUPnmt6cm1dACUWlRfSVud1Rh64Sq9IddRIzYmHj4oNBzXQH",
+      "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=80",
     imageAlt:
-      "Interface futurista de chat em tema escuro com acentos roxos neon.",
-    href: "#",
+      "Cortes premium de churrasco brasileiro grelhados na brasa.",
+    href: "https://restaurante-319t.vercel.app/",
   },
   {
-    title: "Dashboard Administrativo",
+    title: "Dada Quebradeira",
     description:
-      "Interface analítica robusta para gestão de métricas complexas e monitoramento de sistemas.",
-    tags: ["Next.js", "PostgreSQL", "Prisma"],
+      "Site desenvolvido como freelancer para apresentar a marca, fortalecer a presença digital e facilitar o contato com o público.",
+    tags: ["Freelance", "Site institucional", "Responsivo"],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDzOdsWfJuACq0nL5qy9vYRGwdKLqC_u1KUoDHso963vTvSKEDQYtOtGXtSA26b2WD6ZyTM8WIPTOe1BuqKqQoDCLiWKi62gFaFWRVDaAOWDVSgeAPzMKP-FuSVzPBnfPazlT297pRxxY2JKDB41ZsPAndj5t86J6LGurBBH7zQw7LXMaV68sUePZ1IigEu1XVqSaiTP23KSK-YkwbzUFtb04XqPi_2iJED_FHA6pXTrvjKZTNBsA8ghcAvvTAvmxVnJ2pQKvScoGTH",
     imageAlt:
-      "Dashboard administrativo escuro com gráficos roxos e azuis em tempo real.",
-    href: "#",
+      "Interface de site institucional com identidade visual marcante.",
+    href: "https://www.dadaquebradeira.com.br/",
   },
   {
     title: "Automação para Discord",
     description:
-      "Bot corporativo escalável para gestão de comunidades, automação de tarefas e integração de fluxos de trabalho.",
+      "Bot para Discord criado para automatizar tarefas, organizar comunidades e integrar fluxos simples de trabalho.",
     tags: ["Python", "Discord API"],
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCqdIn2Y_T7Q5CbZHcxpOfbkP4SYf40P11atVM2MSU5QlnuxUDHKkD2ad1K-kzDM1jl0nXm_UCcGKmQPWDPmp9CBqswzNA4lJVhKKqnUTuQSgXxOMrZG7CqH8DWZOw1EkekEs58w7iG4vZrb285xZVShs2LA6RPk1WZV651_szFfI9foc078G-MStP0Ag_eWHa-OlPL_K1fzLNgLxNjwyPH87FgGUJTc3XbaaLOHsYEQf5-TpAA0KgU3xTPABlWjK1L-wtKEwxndSXK",
@@ -87,24 +87,24 @@ export const projects: Project[] = [
 
 export const timelineItems: TimelineItem[] = [
   {
-    role: "Senior Full Stack Developer",
-    meta: "Tech Solutions Inc • 2022 — Atual",
+    role: "Técnico de Redes",
+    meta: "Atuação atual",
     description:
-      "Liderança técnica de equipes, arquitetura de sistemas escaláveis em nuvem e otimização de processos críticos.",
+      "Trabalho com suporte, infraestrutura e redes, experiência que fortalece minha base prática em sistemas, conectividade e resolução de problemas.",
     align: "left",
   },
   {
-    role: "Backend Engineer",
-    meta: "Global Code Lab • 2020 — 2022",
+    role: "Freelancer em Programação",
+    meta: "Projetos sob demanda",
     description:
-      "Desenvolvimento de APIs RESTful de alta performance utilizando Java e Spring Boot para o setor financeiro.",
+      "Desenvolvo sites, landing pages e automações para clientes, transformando necessidades reais em soluções simples, responsivas e funcionais.",
     align: "right",
   },
   {
-    role: "Engenharia de Software",
-    meta: "Universidade Tecnológica • Graduação",
+    role: "Engenharia de Computação",
+    meta: "Graduação em andamento",
     description:
-      "Foco em algoritmos, estrutura de dados e engenharia reversa de softwares complexos.",
+      "Curso Engenharia de Computação, aprofundando fundamentos de programação, arquitetura de computadores, redes e desenvolvimento de software.",
     align: "left",
   },
 ];
@@ -124,7 +124,7 @@ export const footerLinks: ContactLink[] = [
 
 export const heroImage = {
   src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA-_GTDlmgBD3RhhyMJY-Gi6EyFIm2tmCJX9yosXsiEpGcNI8XNEweKd9kVOeaJWpKPmOXKPjXlwofeUI84EI1yQtYHAGn-T4cX_loP1Xuum1eefjxNl0Lum0u4LzVbi_stDqWu8k7b8srpVNz6BqbKtRAGFoB0k6Uk7jS-bm4Fsf9lO9XBws6ckgIlqbQjVvF6-_Obg_0cs4UQja5PshP3BJx3-0LsVQ_DmyP-ZCxJxQt-P51mf4wV_ACf6Qh2mf3kFzmaGTSVPUfQ",
-  alt: "Caio, desenvolvedor de software profissional.",
+  alt: "Caio, estudante de Engenharia de Computação e freelancer em programação.",
 };
 
 export const aboutImage = {

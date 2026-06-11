@@ -14,8 +14,8 @@ export function TechStackSection() {
               Tech <span className="text-primary">Stack</span>
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              O conjunto de ferramentas que utilizo para transformar ideias
-              complexas em experiências digitais fluidas e escaláveis.
+              Ferramentas que venho usando nos estudos e nos freelas para tirar
+              ideias do papel com código limpo e interfaces responsivas.
             </p>
           </Reveal>
         </div>

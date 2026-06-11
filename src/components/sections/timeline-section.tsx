@@ -12,10 +12,10 @@ export function TimelineSection() {
       <div className="mx-auto max-w-container-max-width px-gutter">
         <Reveal className="mb-20 text-center">
           <h2 id="timeline-title" className="mb-4 font-headline-xl text-headline-xl">
-            Trajetória <span className="text-primary">Profissional</span>
+            Minha <span className="text-primary">Trajetória</span>
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
-            A evolução técnica através dos anos.
+            Um caminho construído entre estudo, redes e projetos freelance.
           </p>
         </Reveal>
 

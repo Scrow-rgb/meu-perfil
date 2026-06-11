@@ -18,16 +18,16 @@ export function AboutSection() {
             Além do <span className="text-primary">Código</span>
           </h2>
           <p className="mb-6 font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
-            Minha jornada no desenvolvimento começou pela curiosidade de
-            entender como as coisas funcionam sob o capô. Hoje, vejo o
-            desenvolvimento como uma forma de arte funcional, onde a precisão
-            técnica encontra a experiência do usuário.
+            Minha jornada na programação começou pela curiosidade de entender
+            como a tecnologia funciona por trás das telas. Hoje curso Engenharia
+            de Computação, trabalho como técnico de redes e desenvolvo projetos
+            como freelancer.
           </p>
           <p className="mb-8 font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
-            Acredito em arquiteturas limpas, código bem documentado e automação
-            como pilares para o sucesso de qualquer produto digital moderno.
-            Quando não estou codando, estou explorando novas tecnologias ou
-            contribuindo para o ecossistema open source.
+            Ainda não trabalho como desenvolvedor em uma empresa, mas uso cada
+            freela para evoluir na prática: ouvindo o cliente, planejando a
+            solução, escrevendo código e entregando sites funcionais, responsivos
+            e fáceis de manter.
           </p>
 
           <GlassCard className="flex items-start gap-4 rounded-2xl p-6">
@@ -37,8 +37,8 @@ export function AboutSection() {
                 Filosofia de Trabalho
               </h3>
               <p className="text-sm text-on-surface-variant">
-                &quot;Se pode ser feito manualmente, pode ser automatizado. Se
-                pode ser automatizado, deve ser escalável.&quot;
+                &quot;Aprender na prática, resolver problemas reais e entregar algo
+                que ajude pessoas e negócios.&quot;
               </p>
             </div>
           </GlassCard>

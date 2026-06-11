@@ -21,7 +21,7 @@ export function HeroSection() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-primary">
             <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
             <span className="font-label-sm text-label-sm uppercase tracking-widest">
-              Available for hire
+              Disponível para freelas
             </span>
           </div>
 
@@ -33,8 +33,9 @@ export function HeroSection() {
           </h1>
 
           <p className="mb-10 max-w-xl font-body-lg text-body-lg text-on-surface-variant">
-            Desenvolvedor Full Stack especializado em aplicações web modernas,
-            automação e soluções escaláveis que conectam código e performance.
+            Estudante de Engenharia de Computação, técnico de redes e
+            freelancer em programação, criando sites, automações e soluções web
+            sob demanda.
           </p>
 
           <div className="flex flex-wrap gap-4">

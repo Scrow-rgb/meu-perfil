@@ -22,14 +22,16 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://caio.dev"),
   title: {
-    default: "DEV.SOLO — Caio | Full Stack Developer",
+    default: "DEV.SOLO — Caio | Programação e Redes",
     template: "%s | DEV.SOLO",
   },
   description:
-    "Portfolio profissional de Caio, desenvolvedor Full Stack especializado em Next.js, automação, APIs e aplicações web escaláveis.",
+    "Portfólio de Caio, estudante de Engenharia de Computação, técnico de redes e freelancer em programação.",
   keywords: [
     "Caio",
-    "Full Stack Developer",
+    "Freelancer em Programação",
+    "Técnico de Redes",
+    "Engenharia de Computação",
     "Next.js",
     "React",
     "TypeScript",
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Caio" }],
   creator: "Caio",
   openGraph: {
-    title: "DEV.SOLO — Caio | Full Stack Developer",
+    title: "DEV.SOLO — Caio | Programação e Redes",
     description:
-      "Aplicações web modernas, automação e soluções escaláveis que conectam código e performance.",
+      "Sites, automações e soluções web criadas por um estudante de Engenharia de Computação que também atua com redes.",
     url: "https://caio.dev",
     siteName: "DEV.SOLO",
     locale: "pt_BR",
@@ -48,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DEV.SOLO — Caio | Full Stack Developer",
+    title: "DEV.SOLO — Caio | Programação e Redes",
     description:
-      "Portfolio profissional de desenvolvedor Full Stack com foco em experiências digitais escaláveis.",
+      "Portfólio de projetos freelance, estudos em Engenharia de Computação e atuação técnica em redes.",
   },
   icons: {
     icon: "/favicon.svg",

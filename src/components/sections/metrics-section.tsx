@@ -12,7 +12,7 @@ export function MetricsSection() {
     >
       <div className="mx-auto max-w-container-max-width px-gutter">
         <h2 id="metrics-title" className="sr-only">
-          Métricas de experiência
+          Resumo do perfil
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {metrics.map((metric) => (

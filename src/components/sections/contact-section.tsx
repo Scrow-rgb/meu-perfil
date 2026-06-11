@@ -41,7 +41,7 @@ export function ContactSection() {
           </div>
 
           <Link
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5531999898679"
             className="gradient-btn relative z-10 inline-flex items-center justify-center gap-3 rounded-2xl px-12 py-5 text-lg font-extrabold uppercase tracking-wider text-on-primary-container"
             aria-label="Iniciar conversa no WhatsApp"
           >
