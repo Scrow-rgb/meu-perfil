@@ -10,10 +10,10 @@ export function Footer() {
           href="#home"
           className="font-headline-lg text-headline-lg font-extrabold text-on-surface"
         >
-          DEV.SOLO
+          CAIO.LAB
         </Link>
         <p className="font-label-sm text-label-sm text-on-surface-variant">
-          © 2024 DEV.SOLO — CRAFTED WITH PRECISION
+          © 2024 CAIO.LAB — PROGRAMAÇÃO, REDES E FREELAS
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {footerLinks.map((link) => (

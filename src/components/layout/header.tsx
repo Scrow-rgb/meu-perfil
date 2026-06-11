@@ -25,7 +25,7 @@ export function Header() {
           className="font-headline-lg text-headline-lg font-bold text-primary"
           onClick={closeMenu}
         >
-          DEV.SOLO
+          CAIO.LAB
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -42,7 +42,7 @@ export function Header() {
             href="#contact"
             className="gradient-btn rounded-full px-6 py-2 font-bold text-on-primary-container transition-all"
           >
-            Connect
+            Contato
           </Link>
         </div>
 
@@ -82,7 +82,7 @@ export function Header() {
               className="gradient-btn mt-2 rounded-xl px-4 py-3 text-center font-bold text-on-primary-container"
               onClick={closeMenu}
             >
-              Connect
+              Contato
             </Link>
           </div>
         </div>
